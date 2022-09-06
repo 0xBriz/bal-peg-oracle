@@ -30,8 +30,9 @@ contract BalancerPegOracle is Epoch {
         address _pool,
         address _token,
         uint256 _period,
-        uint256 _startTime
-    ) Epoch(_period, _startTime, 0) {
+        uint256 _startTime,
+        uint256 _startEpoch
+    ) Epoch(_period, _startTime, _startEpoch) {
         require(_vault != address(0), "Vault not provided");
         require(_pool != address(0), "Pool not provided");
         require(_token != address(0), "Token not provided");
