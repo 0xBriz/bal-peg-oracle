@@ -1,12 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
 
-import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "./Operator.sol";
 
 contract Epoch is Operator {
-    using SafeMath for uint256;
-
     uint256 private period;
     uint256 private startTime;
     uint256 private lastEpochTime;

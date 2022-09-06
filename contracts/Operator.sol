@@ -3,7 +3,7 @@ pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Operator is Context, Ownable {
+contract Operator is Ownable {
     address private _operator;
 
     event OperatorTransferred(address indexed previousOperator, address indexed newOperator);
